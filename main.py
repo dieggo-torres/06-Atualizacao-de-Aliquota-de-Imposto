@@ -33,8 +33,8 @@ if "livro" in produtos:
     # Impacto financeiro
     diferenca = custo_total_livros_atualizado - custo_total_livros
 
-    diferenca = "R${:_.2}".format(diferenca).replace(
-        ".", ",").replace("_", ".")
+    diferenca = "R${:_.2}".format(diferenca)
+    diferenca = diferenca.replace(".", ",").replace("_", ".")
     print("Com a reforma tributária, o impacto financeiro foi de {}.".format(diferenca))
 
 else:
